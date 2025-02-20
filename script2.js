@@ -6,7 +6,7 @@ let lowerCaseWordList = availableWords.map(word => word.toLowerCase());
 let possibleWords = [...lowerCaseWordList];
 let previousGuesses = [];
 
-const secretWord = "coral"; // Change this for testing
+const secretWord = "chair"; // Change this for testing
 const inputField = document.getElementById("guess");
 const submitButton = document.getElementById("submit");
 const previousGuessesContainer = document.getElementById("previous-guesses");
@@ -141,4 +141,18 @@ function updateWordList(words) {
     filteredWordsContainer.innerHTML = words.length === 0 
         ? "<p>No possible words found.</p>" 
         : `<p>${words.join(", ")}</p>`;
+}
+
+
+
+
+function displayFeedback(word, feedback) {
+    feedbackContainer.innerHTML = "";
+    word.split("").forEach((letter, i) => {
+        let span = document.createElement("span");
+        span.classList.add("letter-box", feedback[i]);
+        span.textContent = letter.toUpperCase();
+        span.style.animationDelay = `${i * 0.15}s`; // Staggered delay per letter
+        feedbackContainer.appendChild(span);
+    });
 }
