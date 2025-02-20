@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(13, 117, 117);
+    font-family: "Righteous", serif;
+}
+
+.linky {
+    text-decoration: none;
+}
+
+.linky:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-family: "Mystery Quest", serif;
+}
+
+#input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 150px;
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#previous-guesses {
+    list-style: none;
+    padding: 0;
+}
+
+.guess-item {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.letter-box {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+.green { background-color: #6aaa64; color: white; }
+.orange { background-color: #c9b458; color: white; }
+.gray { background-color: #787c7e; color: white; }
+
+#filtered-words {
+    color: #3bad35;
+    font-family: "Patua One", serif;
+}
