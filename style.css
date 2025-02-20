@@ -2,12 +2,14 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
-    background-color: rgb(13, 117, 117);
+    color: rgb(151, 151, 236);
+    background-color: rgb(9, 7, 81);
     font-family: "Righteous", serif;
 }
 
 .linky {
     text-decoration: none;
+    color: rgb(151, 151, 236);
 }
 
 .linky:hover {
@@ -46,7 +48,7 @@ button {
     margin-bottom: 5px;
 }
 
-.letter-box {
+/* .letter-box {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -61,11 +63,11 @@ button {
 .green { background-color: #6aaa64; color: white; }
 .orange { background-color: #c9b458; color: white; }
 .gray { background-color: #787c7e; color: white; }
-
+*/
 #filtered-words {
-    color: #3bad35;
+    color: #a0b8ed;
     font-family: "Patua One", serif;
-}
+} 
 
 
 
