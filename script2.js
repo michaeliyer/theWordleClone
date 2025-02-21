@@ -6,7 +6,12 @@ let lowerCaseWordList = availableWords.map(word => word.toLowerCase());
 let possibleWords = [...lowerCaseWordList];
 let previousGuesses = [];
 
-const secretWord = "clove"; // Change this for testing
+
+
+const secretWord = "fight"; // Change this for testing
+
+
+
 const inputField = document.getElementById("guess");
 const submitButton = document.getElementById("submit");
 const previousGuessesContainer = document.getElementById("previous-guesses");
