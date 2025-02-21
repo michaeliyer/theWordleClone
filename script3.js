@@ -1,4 +1,5 @@
 // Import wordList and convert all words to lowercase for consistency
+import { oldWords } from "./oldWords.js";
 import { the12Thousand } from "./the12Thousand.js";
 let lowerCaseWordList = the12Thousand.map(word => word.toLowerCase());
 
@@ -185,6 +186,48 @@ function updateWordList(words) {
 
 
 
+
+
+
+
+// Get DOM elements
+const wordDropdown2 = document.getElementById("wordDropdown_2");
+const wordStats = document.getElementById("wordStats");
+
+// ✅ Sort words alphabetically
+const sortedWords = oldWords.sort((a, b) => a.word.localeCompare(b.word));
+
+// ✅ Populate dropdown with words
+sortedWords.forEach(({ word }) => {
+    let option = document.createElement("option");
+    option.value = word;
+    option.textContent = word;
+    wordDropdown2.appendChild(option);
+});
+
+// ✅ Display word stats when a word is selected
+wordDropdown2.addEventListener("change", () => {
+    console.log("Dropdown Selected Value:", wordDropdown2.value); // Debugging
+
+    const selectedWord = wordDropdown2.value.toUpperCase(); // Ensure uppercase
+    const wordData = oldWords.find(w => w.word === selectedWord);
+
+    console.log("Matched Word Data:", wordData); // Debugging - Check if word is found
+
+    if (wordData) {
+        wordStats.innerHTML = `
+            <p><strong>Word:</strong> ${wordData.word}</p>
+            <p><strong>Game Date:</strong> ${wordData.gameDate}</p>
+ 
+            <p><strong>Word Number:</strong> ${wordData.wordNumber}</p>
+        `;
+    } else {
+        wordStats.innerHTML = "<p>No stats available.</p>"; // Clear if no match
+    }
+});
+
+
+/* <p><strong>My Score:</strong> ${wordData.myScore}</p> */
 
 
 
