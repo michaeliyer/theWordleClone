@@ -1,10 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
-    color: rgb(151, 151, 236);
-    background-color: rgb(9, 7, 81);
-    font-family: "Righteous", serif;
+    color: rgb(243, 143, 126);
+    background-color: rgb(122, 7, 42);
+    font-size: 1.2rem;
+    font-family: "Road Rage", serif;
 }
 
 .linkLay {
@@ -13,26 +13,26 @@ body {
     align-items: center;
 }
 
-.linky2 {
+.linky1 {
     text-decoration: none;
-    color: rgb(42, 168, 158);
+    color: rgb(103, 107, 239);
 }
 
-.linky3 {
+.linky2 {
     text-decoration: none;
-    color: rgb(241, 186, 83);
+    color: rgb(195, 89, 231);
+}
+
+.linky1:hover {
+    text-decoration: underline;
+    color: rgb(107, 237, 178);
+    font-family: "UnifrakturCook", serif;
 }
 
 .linky2:hover {
     text-decoration: underline;
-    color: rgb(10, 70, 235);
-    font-family: "Mystery Quest", serif;
-}
-
-.linky3:hover {
-    text-decoration: underline;
-    color: rgb(187, 22, 22);
-    font-family: "Mystery Quest", serif;
+    color: rgb(107, 237, 178);
+    font-family: "UnifrakturCook", serif;
 }
 
 #input-container {
@@ -45,6 +45,7 @@ input {
     text-transform: uppercase;
     width: 150px;
     text-align: center;
+    font-family: "Ruluko", serif;
 }
 
 button {
@@ -52,6 +53,23 @@ button {
     padding: 5px 10px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+#guess,
+#submit,
+#word-dropdown {
+    background-color: #c9b458;
+    color: rgb(122, 7, 42);
+}
+
+#guess,
+#submit {
+    font-size: .65rem;
+}
+
+#guess::placeholder {
+    color: rgb(122, 7, 42);
+    opacity: 1; /* Ensure visibility */
 }
 
 #previous-guesses {
@@ -65,27 +83,10 @@ button {
     margin-bottom: 5px;
 }
 
-#guess,
-#submit,
-#word-dropdown {
-    background-color: #c7681a;
-    color: wheat;
-}
 
-#guess,
-#submit {
-    font-size: .65rem;
-}
-
-#guess::placeholder {
-    color: wheat;
-    opacity: 1; /* Ensure visibility */
-}
-
-
-#filtered-words {
-    color: #a0b8ed;
-    font-family: "Patua One", serif;
+ #filtered-words {
+    color: #d4f68e;
+    font-family: "Viaoda Libre", serif;
 } 
 
 

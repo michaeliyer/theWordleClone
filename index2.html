@@ -8,8 +8,16 @@
     <link href="style2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <a href="index.html" class="linky">Wanna Go Big - Click Here</a>
+    <div class="linkLay">
+        <a href="index.html" class="linky1">Wanna Go Big - Click Here</a>
+        <a href="index3.html" class="linky3">Wanna Get Real? Click Here</a>
+    </div>
     <h1>Wordle Clone Small</h1>
+
+    <label for="word-dropdown">Choose a starting word:</label>
+    <select id="word-dropdown">
+        <option value="">Select a word</option>
+    </select>
 
     <div id="input-container">
         <input type="text" id="guess" maxlength="5" placeholder="Enter a 5-letter word">

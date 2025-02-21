@@ -1,12 +1,12 @@
 // Import wordList and convert all words to lowercase for consistency
-import { wordList } from "./wordList.js";
-let lowerCaseWordList = wordList.map(word => word.toLowerCase());
+import { the12Thousand } from "./the12Thousand.js";
+let lowerCaseWordList = the12Thousand.map(word => word.toLowerCase());
 
 // Store the current possible words (starts with the full list)
 let possibleWords = [...lowerCaseWordList];
 let previousGuesses = [];
 
-const secretWord = "coral"; // Change this for testing
+const secretWord = "pygmy"; // Change this for testing
 const inputField = document.getElementById("guess");
 const submitButton = document.getElementById("submit");
 const previousGuessesContainer = document.getElementById("previous-guesses");
@@ -94,8 +94,8 @@ function getFeedback(secret, guess) {
     return feedback;
 }
 // THE FILTER STUFF
-function filterWords(wordList, guess, feedback) {
-    return wordList.filter(word => {
+function filterWords(the12Thousand, guess, feedback) {
+    return the12Thousand.filter(word => {
         let wordArr = word.split("");
         let guessArr = guess.split("");
 
