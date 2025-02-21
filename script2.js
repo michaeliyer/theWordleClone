@@ -156,3 +156,27 @@ function displayFeedback(word, feedback) {
         feedbackContainer.appendChild(span);
     });
 }
+
+
+
+
+// // Import wordList and sort alphabetically
+// let lowerCaseWordList = wordList.map(word => word.toLowerCase()).sort();
+
+// // Populate dropdown with sorted word list
+// const wordDropdown = document.getElementById("word-dropdown");
+// function populateDropdown() {
+//     lowerCaseWordList.forEach(word => {
+//         let option = document.createElement("option");
+//         option.value = word;
+//         option.textContent = word;
+//         wordDropdown.appendChild(option);
+//     });
+// }
+// populateDropdown();
+
+// // Sync dropdown with input field
+// const inputField = document.getElementById("guess");
+// wordDropdown.addEventListener("change", () => {
+//     inputField.value = wordDropdown.value; // Auto-fill input when dropdown is selected
+// });
