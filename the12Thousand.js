@@ -208,7 +208,7 @@ export const the12Thousand = [
     'CLIED', 'CLIES', 'CLIFF', 'CLIFT', 'CLIME', 'CLINE', 'CLINK', 'CLINT',
     'CLIPE', 'CLIPS', 'CLIPT', 'CLITS', 'CLOAM', 'CLOCK', 'CLODS', 'CLOFF', 'CLOGS',
     'CLOKE', 'CLOMB', 'CLOMP', 'CLONK', 'CLONS', 'CLOOP', 'CLOOT', 'CLOPS',
-    'CLOTE', 'CLOTH', 'CLOTS', 'CLOUR', 'CLOUS', 'CLOUT', 'CLOWS',
+    'CLOTE', 'CLOTH', 'CLOTS', 'CLOUR', 'CLOUS', 'CLOUT', 'CLOVE', 'CLOWS',
     'CLOYE', 'CLOYS', 'CLOZE', 'CLUBS', 'CLUCK', 'CLUED', 'CLUES', 'CLUEY', 'CLUMP', 'CLUNG',
     'CLUNK', 'CLYPE', 'CNIDA', 'COACT', 'COADY', 'COALA', 'COALS', 'COALY', 'COAPT',
     'COARB', 'COAST', 'COATE', 'COATI', 'COATS', 'COBBS', 'COBBY', 'COBIA', 'COBLE', 'COBRA',
