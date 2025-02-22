@@ -43,7 +43,7 @@ export const availableWords = [
     'FIGHT', 'FILER', 'FILLY', 'FILMY', 'FILTH', 'FIZZY', 'FLACK', 'FLAKY',
     'FLECK', 'FLEET', 'FLIER', 'FLUID', 'FLUKE', 
     'FLUSH', 'FLUTE', 'FOAMY', 'FOIST', 'FOLIO', 'FORUM', 'FRAUD',
-    'FREAK', 'FREED', 'FREER', 'FRIAR', 'FRILL', 'FRISK', 'FRITZ', 'FRUIT', 'FUDGE',
+    'FREAK', 'FREED', 'FREER', 'FRIAR', 'FRILL', 'FRISK', 'FRITZ', 'FRUIT', 'FUCKO', 'FUDGE',
     'FUGUE', 'FUNKY', 'FUROR', 'FURRY', 'FUSSY', 'FUZZY', 'GABLE', 'GAFFE', 'GAILY',  
     'GASSY', 'GAUGE', 'GAVEL', 'GAYER', 'GAYLY', 'GAZER', 'GEEKY', 'GEESE', 'GENIE', 
     'GHOST', 'GIPSY', 'GIRLY', 'GIVER', 'GLADE', 'GLAND', 'GLARE', 'GLINT', 'GLOSS', 'GNOME',
