@@ -235,7 +235,7 @@ export const the12Thousand = [
     'COZEY', 'COZIE',
     'CRAAL', 'CRABS', 'CRACK', 'CRAGS', 'CRAIC', 'CRAIG', 'CRAKE', 'CRAME', 
     'CRAMS', 'CRANK', 'CRANS', 'CRAPE', 'CRAPS', 'CRAPY', 'CRARE', 'CRASH', 'CRASS',
-    'CRATE', 'CRAWS', 'CRAYS', 'CRAZE', 'CRAZY', 'CREAM',
+    'CRATE', 'CRAWS', 'CRAYS', 'CRAZE', 'CRAZY', 
     'CREDS', 'CREED', 'CREEK', 'CREEL', 'CREEP', 'CREES', 'CREME', 'CREMS', 'CRENA', 
     'CREPS', 'CREPY', 'CRESS', 'CREST', 'CREWE', 'CREWS', 'CRIAS', 'CRIBS', 'CRICK',
     'CRIED', 'CRIER', 'CRIES', 'CRIMP', 'CRIMS', 'CRINE', 'CRIOS', 'CRIPE', 'CRISE',
