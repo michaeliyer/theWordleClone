@@ -8,7 +8,7 @@ let previousGuesses = [];
 
 
 
-const secretWord = "fight"; // Change this for testing
+const secretWord = "sucks"; // Change this for testing
 
 
 
