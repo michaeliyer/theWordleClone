@@ -11,7 +11,7 @@ let previousGuesses = [];
 
 
 
-const secretWord = "GHAST"; // Change this for testing
+const secretWord = "trump"; // Change this for testing
 
 
 
