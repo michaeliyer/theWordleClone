@@ -72,7 +72,7 @@ export const availableWords = [
     'NAVEL', 'NEWER', 'NEWLY', 'NIECE', 'NINNY',
     'NOBLY', 'NOISY', 'NOMAD', 'NOOSE', 'NOSEY', 'NOTCH', 'NOVEL', 'NUDGE', 'NURSE', 'NUTTY',
     'NYLON', 'OAKEN', 'OBESE', 'OCTAL', 'ODDER', 'ODDLY', 'OFFER', 'OLDEN', 'OMBRE',
-    'OMEGA', 'OPINE', 'OPIUM', 'OPTIC', 'ORBIT', 'OTTER', 'OUTGO',
+    'OMEGA', 'OPINE', 'OPIUM', 'OPTIC', 'ORBIT', 'OUTGO',
     'OVARY', 'OVATE', 'OVINE', 'OVOID', 'OWING', 'OZONE', 'PADDY', 'PAGAN',
     'PALER', 'PALSY', 'PANSY', 'PARKA', 'PARSE', 'PASTE', 'PASTY', 'PATCH',
     'PATSY', 'PAYEE', 'PAYER', 'PECAN', 'PENAL', 'PENCE', 'PENNY',
