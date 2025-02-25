@@ -19,6 +19,7 @@ const secretWord = "trump"; // Change this for testing
 
 
 
+
 const inputField = document.getElementById("guess");
 const submitButton = document.getElementById("submit");
 const previousGuessesContainer = document.getElementById("previous-guesses");
