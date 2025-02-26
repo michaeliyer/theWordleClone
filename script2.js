@@ -1,6 +1,6 @@
 // Import wordList and convert all words to lowercase for consistency
-import { availableWords } from "./availableWords.js";
-let lowerCaseWordList = availableWords.map(word => word.toLowerCase());
+import { dailyWordsSmall } from "./theWholeEnchilada.js";
+let lowerCaseWordList = dailyWordsSmall.map(word => word.toLowerCase());
 
 // Store the current possible words (starts with the full list)
 let possibleWords = [...lowerCaseWordList];
@@ -8,7 +8,7 @@ let previousGuesses = [];
 
 
 
-const secretWord = "munch"; // Change this for testing
+const secretWord = "wharf"; // Change this for testing
 
 
 
@@ -99,8 +99,8 @@ function getFeedback(secret, guess) {
     return feedback;
 }
 // THE FILTER STUFF
-function filterWords(availableWords, guess, feedback) {
-    return availableWords.filter(word => {
+function filterWords(dailyWordsSmall, guess, feedback) {
+    return dailyWordsSmall.filter(word => {
         let wordArr = word.split("");
         let guessArr = guess.split("");
 

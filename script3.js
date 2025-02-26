@@ -1,7 +1,6 @@
 // Import wordList and convert all words to lowercase for consistency
-import { oldWords } from "./oldWords.js";
-import { the12Thousand } from "./the12Thousand.js";
-let lowerCaseWordList = the12Thousand.map(word => word.toLowerCase());
+import { dailyWordsLarge, wordleWords } from "./theWholeEnchilada.js";
+let lowerCaseWordList = dailyWordsLarge.map(word => word.toLowerCase());
 
 // Store the current possible words (starts with the full list)
 let possibleWords = [...lowerCaseWordList];
@@ -10,7 +9,7 @@ let previousGuesses = [];
 
 
 
-const secretWord = "asses"; // Change this for testing
+const secretWord = "adios"; // Change this for testing
 
 
 
@@ -102,8 +101,8 @@ function getFeedback(secret, guess) {
     return feedback;
 }
 // THE FILTER STUFF
-function filterWords(the12Thousand, guess, feedback) {
-    return the12Thousand.filter(word => {
+function filterWords(dailyWordsLarge, guess, feedback) {
+    return dailyWordsLarge.filter(word => {
         let wordArr = word.split("");
         let guessArr = guess.split("");
 
@@ -202,7 +201,7 @@ const wordDropdown2 = document.getElementById("wordDropdown_2");
 const wordStats = document.getElementById("wordStats");
 
 // ✅ Sort words alphabetically
-const sortedWords = oldWords.sort((a, b) => a.word.localeCompare(b.word));
+const sortedWords = wordleWords.sort((a, b) => a.word.localeCompare(b.word));
 
 // ✅ Populate dropdown with words
 sortedWords.forEach(({ word }) => {
@@ -217,7 +216,7 @@ wordDropdown2.addEventListener("change", () => {
     console.log("Dropdown Selected Value:", wordDropdown2.value); // Debugging
 
     const selectedWord = wordDropdown2.value.toUpperCase(); // Ensure uppercase
-    const wordData = oldWords.find(w => w.word === selectedWord);
+    const wordData = wordleWords.find(w => w.word === selectedWord);
 
     console.log("Matched Word Data:", wordData); // Debugging - Check if word is found
 

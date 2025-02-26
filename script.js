@@ -1,6 +1,6 @@
 // Import wordList and convert all words to lowercase for consistency
-import { fixedWordsLarge } from "./theWholeEnchiladaFuckaround.js";
-import { curseWords } from "./theWholeEnchiladaFuckaround.js";
+// import { fixedWordsLarge } from "./theWholeEnchiladaFuckaround.js";
+import { fixedWordsLarge } from "./theWholeEnchilada.js";
 
 let lowerCasefixedWordsLarge = fixedWordsLarge.map(word => word.toLowerCase());
 
@@ -14,7 +14,7 @@ let previousGuesses = [];
 
 
 
-const secretWord = "LOSER"; // Change this for testing
+const secretWord = "spits"; // Change this for testing
 
 
 
@@ -69,7 +69,7 @@ submitButton.addEventListener("click", () => {
 
    console.log(x)
    console.log(y)
-   console.log(curseWords)
+   console.log(fixedWordsLarge)
 
     let userWord = inputField.value.toLowerCase();
 
@@ -230,25 +230,20 @@ function displayFeedback(word, feedback) {
 
 
 
+
+
+
+
 // // Import wordList and convert all words to lowercase for consistency
-// import { wordList } from "./wordList.js";
-// let lowerCaseWordList = wordList.map(word => word.toLowerCase());
+// import { curseWords } from "./theWholeEnchiladaFuckaround.js";
+// let lowerCasecurseWords = curseWords.map(word => word.toLowerCase());
 
 // // Store the current possible words (starts with the full list)
-// let possibleWords = [...lowerCaseWordList];
+// let possibleWords = [...lowerCasecurseWords];
 // let previousGuesses = [];
 
 
-
-
-
-
-// const secretWord = "ENVOY"; // Change this for testing
-
-
-
-
-
+// const secretWord = "CUNTZ"; // Change this for testing
 
 
 
@@ -260,16 +255,13 @@ function displayFeedback(word, feedback) {
 
 // const wordDropdown = document.getElementById("word-dropdown"); // ✅ Ensure this is defined
 
-
-
-
 // // ✅ Populate dropdown with sorted words
 // function populateDropdown() {
 //     if (!wordDropdown) {
 //         console.error("Dropdown not found in the DOM!");
 //         return;
 //     }
-//     lowerCaseWordList.forEach(word => {
+//     lowerCasecurseWords.forEach(word => {
 //         let option = document.createElement("option");
 //         option.value = word;
 //         option.textContent = word;
@@ -282,19 +274,6 @@ function displayFeedback(word, feedback) {
 // wordDropdown.addEventListener("change", () => {
 //     inputField.value = wordDropdown.value; // Auto-fill input when dropdown is selected
 // });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -311,7 +290,7 @@ function displayFeedback(word, feedback) {
 //     displayPreviousGuesses();
     
 //     possibleWords = filterWords(possibleWords, userWord, feedback);
-//     updateWordList(possibleWords);
+//     updatecurseWords(possibleWords);
 // });
 
 // function getFeedback(secret, guess) {
@@ -339,8 +318,8 @@ function displayFeedback(word, feedback) {
 //     return feedback;
 // }
 // // THE FILTER STUFF
-// function filterWords(wordList, guess, feedback) {
-//     return wordList.filter(word => {
+// function filterWords(curseWords, guess, feedback) {
+//     return curseWords.filter(word => {
 //         let wordArr = word.split("");
 //         let guessArr = guess.split("");
 
@@ -419,7 +398,7 @@ function displayFeedback(word, feedback) {
 // }
 
 
-// function updateWordList(words) {
+// function updatecurseWords(words) {
 //     wordCount.textContent = words.length;
     
 //     // Display words in a paragraph, comma-separated
@@ -427,20 +406,6 @@ function displayFeedback(word, feedback) {
 //         ? "<p>No possible words found.</p>" 
 //         : `<p>${words.join(", ")}</p>`;
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
