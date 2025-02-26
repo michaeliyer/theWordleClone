@@ -283,7 +283,8 @@ export const fixedWordsLarge = [
     'DEVIS', 'DEVON', 'DEVOS', 'DEVOT', 'DEWAN', 'DEWAR', 'DEWAX', 'DEWED', 'DEXES', 'DEXIE',
     'DHABA', 'DHAKS', 'DHALS', 'DHIKR', 'DHOBI', 'DHOLE', 'DHOLL', 'DHOLS', 'DHOTI', 'DHOWS',
     'DHUTI', 'DIACT', 'DIALS', 'DIANE', 'DIARY', 'DIAZO', 'DIBBS', 'DICED', 'DICER', 'DICES',
-    'DICEY', 'DICHT', 'DICKS', 'DICKY', 'DICOT', 'DICTA', 'DICTS', 'DICTY', 'DIDDY', 'DIDIE',
+    'DICEY', 'DICHT', 'DICKS', 'DICKY', 'DICKZ', 'DICOT', 'DICTA', 'DICTS', 'DICTY', 'DIDDY', 
+    'DIDIE',
     'DIDOS', 'DIDST', 'DIEBS', 'DIELS', 'DIENE', 'DIETS', 'DIFFS', 'DIGHT', 'DIGIT', 'DIKAS',
     'DIKED', 'DIKER', 'DIKES', 'DILDO', 'DILLI', 'DILLS', 'DILLY', 'DIMBO', 'DIMER', 'DIMES',
     'DIMLY', 'DIMPS', 'DINAR', 'DINED', 'DINER', 'DINES', 'DINGE', 'DINGO', 'DINGS', 'DINGY',
@@ -887,7 +888,8 @@ export const fixedWordsLarge = [
     'QUBIT', 'QUEAN', 'QUEEN', 'QUEER', 'QUELL', 'QUEME', 'QUENA', 'QUERN', 'QUERY', 'QUEST',
     'QUEUE', 'QUEYN', 'QUEYS', 'QUICH', 'QUICK', 'QUIDS', 'QUIET', 'QUIFF', 'QUILL', 'QUILT',
     'QUIMS', 'QUINA', 'QUINE', 'QUINO', 'QUINS', 'QUINT', 'QUIPO', 'QUIPS', 'QUIPU', 'QUIRE',
-    'QUIRK', 'QUIRT', 'QUIST', 'QUITE', 'QUITS', 'QUOAD', 'QUODS', 'QUOIF', 'QUOIN', 'QUOIT',
+    'QUIRK', 'QUIRT', 'QUIST', 'QUITE', 'QUITS', 'QUIZO', 'QUOAD', 'QUODS', 'QUOIF', 'QUOIN', 
+    'QUOIT',
     'QUOLL', 'QUONK', 'QUOPS', 'QUOTA', 'QUOTE', 'QUOTH', 'QURSH', 'QUYTE', 'RABAT', 'RABBI',
     'RABIC', 'RABID', 'RABIS', 'RACED', 'RACER', 'RACES', 'RACHE', 'RACKS', 'RACON', 'RADAR',
     'RADGE', 'RADII', 'RADIO', 'RADIX', 'RADON', 'RAFFS', 'RAFTS', 'RAGAS', 'RAGDE', 'RAGED',
@@ -1989,7 +1991,7 @@ export const dailyWordsLarge = [
     'IRIDS', 'IRING', 'IRKED', 'IROKO', 'IRONE', 'IRONS', 'ISBAS', 'ISHES', 'ISLED',
     'ISLES', 'ISLET', 'ISNAE', 'ISSEI', 'ISSUE', 'ISTLE', 'ITEMS', 'ITHER', 'IVIED',
     'IVIES', 'IVORY', 'IXIAS', 'IXNAY', 'IXORA', 'IXTLE', 'IZARD', 'IZARS', 'IZZAT', 'JAAPS',
-    'JABOT', 'JACAL', 'JACKS', 'JACKY', 'JADED', 'JADES', 'JAFAS', 'JAFFA', 'JAGAS', 'JAGER',
+    'JABOT', 'JACAL', 'JACKO', 'JACKS', 'JACKY', 'JADED', 'JADES', 'JAFAS', 'JAFFA', 'JAGAS', 'JAGER',
     'JAGGS', 'JAGGY', 'JAGIR', 'JAGRA', 'JAILS', 'JAKER', 'JAKES', 'JAKEY', 'JALAP', 'JALOP',
     'JAMBE', 'JAMBO', 'JAMBS', 'JAMBU', 'JAMES', 'JAMMY', 'JAMON', 'JANES', 'JANNS', 'JANNY',
     'JANTY', 'JAPAN', 'JAPED', 'JAPER', 'JAPES', 'JARKS', 'JARLS', 'JARPS', 'JARTA', 'JARUL',
@@ -10853,7 +10855,16 @@ export const letterValues = {
     J: 8, K: 5, L: 1, M: 3, N: 1, O: 1, P: 3, Q: 10, R: 1,
     S: 1, T: 1, U: 1, V: 4, W: 4, X: 8, Y: 4, Z: 10
 };
+
+
+export const curseWords = [
+'DICKO', 'PRICK', 'CUNTZ', 'RIMMY', 'CUMMY', 'JIZZY', 'FAGOT', 'RECTA', 'FRICK', 'TEBAG',
+'WANGS', "PUSSY", 
+]
+
 console.log("this works great");
+
+
 
 
 

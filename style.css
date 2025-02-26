@@ -16,23 +16,28 @@ body {
 .linky2 {
     text-decoration: none;
     color: rgb(42, 168, 158);
+    font-family: "Diplomata", serif;
+
 }
 
 .linky3 {
     text-decoration: none;
     color: rgb(241, 186, 83);
+    font-family: "Galindo", serif;
 }
 
 .linky2:hover {
     text-decoration: underline;
-    color: rgb(10, 70, 235);
+    color: rgb(182, 210, 20);
     font-family: "Mystery Quest", serif;
+    font-size: 1.5rem;
 }
 
 .linky3:hover {
     text-decoration: underline;
-    color: rgb(187, 22, 22);
-    font-family: "Mystery Quest", serif;
+    color: rgb(244, 141, 125);
+    font-family: "Grand Hotel", serif;
+    font-size: 1.5rem;
 }
 
 #input-container {
@@ -91,6 +96,7 @@ button {
 
 
 
+
 .letter-box {
     display: inline-block;
     width: 50px;
@@ -99,10 +105,10 @@ button {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    border: 2px solid #000;
-    opacity: 0; /* Initially hidden */
+    border: .1rem solid #ffffff;
+    opacity: 0;  /* Initially hidden */
     transform: scale(0.8);
-    animation: reveal 0.5s ease-in forwards;
+    animation: reveal 1s ease-in forwards;
 }
 
 .green { background-color: #6aaa64; color: white; }
