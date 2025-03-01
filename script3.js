@@ -9,7 +9,7 @@ let previousGuesses = [];
 
 
 
-const secretWord = "adios"; // Change this for testing
+const secretWord = "LIFES"; // Change this for testing
 
 
 
