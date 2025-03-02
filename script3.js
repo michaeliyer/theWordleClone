@@ -8,8 +8,8 @@ let previousGuesses = [];
 
 
 
-
-const secretWord = "BAZOO"; // Change this for testing
+//word for daily large
+const secretWord = "PALIS"; // Change this for testing
 
 
 

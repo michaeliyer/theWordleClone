@@ -7,8 +7,8 @@ let possibleWords = [...lowerCaseWordList];
 let previousGuesses = [];
 
 
-
-const secretWord = "ORBIT"; // Change this for testing
+//word for dailySmall
+const secretWord = "PLANE"; // Change this for testing
 
 
 
