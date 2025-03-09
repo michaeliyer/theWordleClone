@@ -14,7 +14,7 @@ let previousGuesses = [];
 
 
 //word for fixedLarge
-const secretWord = "MANUS"; // Change this for testing
+const secretWord = "PARKY"; // Change this for testing
 
 
 
