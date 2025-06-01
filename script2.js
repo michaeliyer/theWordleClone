@@ -8,7 +8,7 @@ let previousGuesses = [];
 
 
 //word for dailySmall
-const secretWord = "HORNY"; // Change this for testing
+const secretWord = "CORAL"; // Change this for testing
 
 
 
