@@ -9,7 +9,7 @@ let previousGuesses = [];
 
 
 //word for daily large
-const secretWord = "VIGIA"; // Change this for testing
+const secretWord = "SALUE"; // Change this for testing
 
 
 
