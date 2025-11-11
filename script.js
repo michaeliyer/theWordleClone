@@ -75,11 +75,17 @@ submitButton.addEventListener("click", () => {
 
   let userWord = inputField.value.toLowerCase();
 
-  if (userWord.length !== 5 || !possibleWords.includes(userWord)) {
-    alert("Please enter a valid 5-letter word!");
+  // **************************************************
+  // if (userWord.length !== 5 || !possibleWords.includes(userWord)) {
+  //   alert("Please enter a valid 5-letter word!");
+  //   return;
+  // }
+
+  if (userWord.length !== 5) {
+    alert("Please enter a 5-letter word!");
     return;
   }
-
+  // **************************************************
   const feedback = getFeedback(secretWord.toLowerCase(), userWord);
   previousGuesses.push({ word: userWord, feedback });
   displayPreviousGuesses();
