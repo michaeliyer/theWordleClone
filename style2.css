@@ -115,3 +115,116 @@ button {
         transform: scale(1);
     }
 }
+
+#keyboard {
+    margin: 30px auto 10px;
+    max-width: 700px;
+}
+
+.virtual-keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    background: rgba(10, 50, 30, 0.8);
+}
+
+.key {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    min-height: 60px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(5, 35, 20, 0.9);
+    color: #f4f4f4;
+    font-family: "Protest Riot", serif;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.key-letter {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.key-position {
+    position: absolute;
+    font-size: 0.65rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: color 0.2s ease;
+}
+
+.key-position.active {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.key-position.pos-1 {
+    top: 4px;
+    left: 4px;
+}
+
+.key-position.pos-2 {
+    top: 4px;
+    right: 4px;
+}
+
+.key-position.pos-3 {
+    bottom: 4px;
+    left: 4px;
+}
+
+.key-position.pos-4 {
+    bottom: 4px;
+    right: 4px;
+}
+
+.key-position.pos-5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7rem;
+}
+
+.key-position.in-middle {
+    top: auto;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+}
+
+.key-position.green {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.key-position.orange {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.key-position.gray {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.key.green {
+    background-color: #2e8b57;
+    border-color: #62f0ae;
+}
+
+.key.orange {
+    background-color: #a3812f;
+    border-color: #ffd07d;
+}
+
+.key.gray {
+    background-color: #4a4d62;
+    border-color: #9ea3c7;
+}

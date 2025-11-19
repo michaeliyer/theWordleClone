@@ -1,5 +1,6 @@
 // Import wordList and convert all words to lowercase for consistency
 import { dailyWordsSmall } from "./theWholeEnchilada.js";
+import { initKeyboard } from "./zoosKeys.js";
 const lowerCaseWordList = dailyWordsSmall.map((word) => word.toLowerCase());
 
 const inputField = document.getElementById("guess");
@@ -9,6 +10,7 @@ const filteredWordsContainer = document.getElementById("filtered-words");
 const wordCount = document.getElementById("word-count");
 const wordDropdown = document.getElementById("word-dropdown");
 const newWordButton = document.getElementById("new-word");
+const keyboard = initKeyboard("keyboard");
 
 let possibleWords = [...lowerCaseWordList];
 let previousGuesses = [];
@@ -25,6 +27,7 @@ function resetGame() {
   if (wordDropdown) {
     wordDropdown.value = "";
   }
+  keyboard.reset();
 }
 
 function generateNewSecretWord() {
@@ -80,6 +83,7 @@ submitButton.addEventListener("click", () => {
   const feedback = getFeedback(secretWord.toLowerCase(), userWord);
   previousGuesses.push({ word: userWord, feedback });
   displayPreviousGuesses();
+  keyboard.applyFeedback(userWord, feedback);
 
   possibleWords = filterWords(possibleWords, userWord, feedback);
   updateWordList(possibleWords);
