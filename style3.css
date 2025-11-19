@@ -81,6 +81,29 @@ button {
     cursor: pointer;
 }
 
+.reset-button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    margin: 0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    transform: rotate(90deg);
+}
+
 #guess,
 #submit,
 #word-dropdown {
