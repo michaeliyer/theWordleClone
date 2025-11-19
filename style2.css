@@ -1,331 +1,337 @@
 body {
-    font-family: "Geologica", serif;
-    text-align: center;
-    margin: 20px;
-    color: rgb(145, 236, 145);
-    background-color: rgb(2, 41, 25);
+  font-family: "Geologica", serif;
+  text-align: center;
+  margin: 20px;
+  color: rgb(145, 236, 145);
+  background-color: rgb(2, 41, 25);
 }
 
 .linkLay {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .linky1 {
-    text-decoration: none;
-    color: rgb(94, 83, 224);
+  text-decoration: none;
+  color: rgb(94, 83, 224);
 }
 
 .linky3 {
-    text-decoration: none;
-    color: rgb(173, 14, 125);
+  text-decoration: none;
+  color: rgb(173, 14, 125);
 }
 
 .linky4 {
-    text-decoration: none;
-    color: rgb(48, 227, 111);
+  text-decoration: none;
+  color: rgb(48, 227, 111);
 }
 
 .linky1:hover {
-    text-decoration: underline;
-    color: rgb(245, 118, 118);
-    font-family: "Mystery Quest", serif;
+  text-decoration: underline;
+  color: rgb(245, 118, 118);
+  font-family: "Mystery Quest", serif;
 }
 
 .linky3:hover {
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-    font-family: "Mystery Quest", serif;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  font-family: "Mystery Quest", serif;
 }
 
 .linky4:hover {
-    text-decoration: underline;
-    color: rgb(10, 177, 152);
-    font-family: "Mystery Quest", serif;
+  text-decoration: underline;
+  color: rgb(10, 177, 152);
+  font-family: "Mystery Quest", serif;
 }
 
 #input-container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 input {
-    font-size: 18px;
-    padding: 5px;
-    text-transform: uppercase;
-    width: 150px;
-    text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 150px;
+  text-align: center;
 }
 
 button {
-    font-size: 18px;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .reset-button {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.2rem;
-    padding: 4px 8px;
-    margin: 0;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-    width: 32px;
-    height: 32px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  margin: 0;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reset-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.9);
-    transform: rotate(90deg);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+  transform: rotate(90deg);
 }
 
 #previous-guesses {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .guess-item {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 #guess,
 #submit,
 #word-dropdown {
-    background-color: #c9b458;
-    color: rgb(2, 41, 25);
+  background-color: #c9b458;
+  color: rgb(2, 41, 25);
 }
 
 #guess,
 #submit {
-    font-size: .65rem;
+  font-size: 0.65rem;
 }
 
 #guess::placeholder {
-    color: rgb(2, 41, 25);
-    opacity: 1; /* Ensure visibility */
+  color: rgb(2, 41, 25);
+  opacity: 1; /* Ensure visibility */
 }
 
- #filtered-words {
-    color: #0ad365;
-    font-family: "Protest Riot", serif;
+#filtered-words {
+  color: #0ad365;
+  font-family: "Protest Riot", serif;
 }
 
 .hidden-words {
-    display: none;
+  display: none;
 }
 
 .toggleable-header {
-    cursor: pointer;
-    user-select: none;
-    transition: opacity 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease;
 }
 
 .toggleable-header:hover {
-    opacity: 0.8;
-} 
-
-
-
-
-.letter-box {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    border: 2px solid #000;
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.8);
-    animation: reveal 0.5s ease-in forwards;
+  opacity: 0.8;
 }
 
-.green { background-color: #6aaa64; color: white; }
-.orange { background-color: #c9b458; color: white; }
-.gray { background-color: #787c7e; color: white; }
+.letter-box {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #000;
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.8);
+  animation: reveal 0.5s ease-in forwards;
+}
+
+.green {
+  background-color: #6aaa64;
+  color: white;
+}
+.orange {
+  background-color: #c9b458;
+  color: white;
+}
+.gray {
+  background-color: #787c7e;
+  color: white;
+}
 
 @keyframes reveal {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 #keyboard {
-    margin: 30px auto 10px;
-    max-width: 700px;
+  margin: 30px auto 10px;
+  max-width: 700px;
 }
 
 .virtual-keyboard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    background: rgba(10, 50, 30, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  background: rgba(10, 50, 30, 0.8);
 }
 
 .key {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 52px;
-    min-height: 60px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(5, 35, 20, 0.9);
-    color: #f4f4f4;
-    font-family: "Protest Riot", serif;
-    transition: transform 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  min-height: 60px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(5, 35, 20, 0.9);
+  color: #f4f4f4;
+  font-family: "Protest Riot", serif;
+  transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
 .key-letter {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    z-index: 1;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  z-index: 1;
 }
 
 .key-position {
-    position: absolute;
-    font-size: 0.65rem;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    transition: color 0.2s ease;
+  position: absolute;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: color 0.2s ease;
 }
 
 .key-position.active {
-    color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .key-position.pos-1 {
-    top: 4px;
-    left: 4px;
+  top: 4px;
+  left: 4px;
 }
 
 .key-position.pos-2 {
-    top: 4px;
-    right: 4px;
+  top: 4px;
+  right: 4px;
 }
 
 .key-position.pos-3 {
-    bottom: 4px;
-    left: 4px;
+  bottom: 4px;
+  left: 4px;
 }
 
 .key-position.pos-4 {
-    bottom: 4px;
-    right: 4px;
+  bottom: 4px;
+  right: 4px;
 }
 
 .key-position.pos-5 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
 }
 
 .key-position.in-middle {
-    top: auto;
-    bottom: 4px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.7rem;
+  top: auto;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
 }
 
 .key-position.green {
-    color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .key-position.orange {
-    color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .key-position.gray {
-    color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .key.green {
-    background-color: #2e8b57;
-    border-color: #62f0ae;
+  background-color: #2e8b57;
+  border-color: #62f0ae;
 }
 
 .key.orange {
-    background-color: #a3812f;
-    border-color: #ffd07d;
+  background-color: #a3812f;
+  border-color: #ffd07d;
 }
 
 .key.gray {
-    background-color: #4a4d62;
-    border-color: #9ea3c7;
+  background-color: #4a4d62;
+  border-color: #9ea3c7;
 }
 
 .success-message {
-    margin: 20px auto;
-    padding: 15px 25px;
-    background: linear-gradient(135deg, #6aaa64 0%, #4a8a54 100%);
-    border: 3px solid #62f0ae;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(98, 240, 174, 0.4);
-    max-width: 400px;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    animation: successPulse 0.5s ease-in-out;
+  margin: 20px auto;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #6aaa64 0%, #4a8a54 100%);
+  border: 3px solid #62f0ae;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(98, 240, 174, 0.4);
+  max-width: 400px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: successPulse 0.5s ease-in-out;
 }
 
 .success-message:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(98, 240, 174, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(98, 240, 174, 0.6);
 }
 
 .success-message.hidden {
-    display: none;
+  display: none;
 }
 
 .success-message p {
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-family: "Protest Riot", serif;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: "Protest Riot", serif;
 }
 
 .success-message #tries-count {
-    color: #ffff00;
-    font-size: 1.4rem;
-    font-weight: 900;
+  color: #ffff00;
+  font-size: 1.4rem;
+  font-weight: 900;
 }
 
 @keyframes successPulse {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

@@ -108,7 +108,11 @@ export function initKeyboard(containerId) {
           posElement.style.opacity = "0";
         }
       } else if (orangePositions.has(pos)) {
-        posElement.classList.add("orange", "active");
+        if (pos === 5) {
+          posElement.classList.add("orange", "active", "in-middle");
+        } else {
+          posElement.classList.add("orange", "active");
+        }
       } else if (status === "gray") {
         posElement.classList.add("gray", "active");
       }
