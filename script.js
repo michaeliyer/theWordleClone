@@ -1,6 +1,7 @@
 // Import wordList and convert all words to lowercase for consistency
 // import { fixedWordsLarge } from "./theWholeEnchiladaFuckaround.js";
 import { fixedWordsLarge } from "./theWholeEnchilada.js";
+import { initKeyboard } from "./zoosKeys.js";
 
 let lowerCasefixedWordsLarge = fixedWordsLarge.map((word) =>
   word.toLowerCase()
@@ -13,6 +14,7 @@ const filteredWordsContainer = document.getElementById("filtered-words");
 const wordCount = document.getElementById("word-count");
 const wordDropdown = document.getElementById("word-dropdown");
 const newWordButton = document.getElementById("new-word");
+const keyboard = initKeyboard("keyboard");
 
 let possibleWords = [...lowerCasefixedWordsLarge];
 let previousGuesses = [];
@@ -28,6 +30,7 @@ function resetGame() {
   if (wordDropdown) {
     wordDropdown.value = "";
   }
+  keyboard.reset();
 }
 
 function generateNewSecretWord() {
@@ -89,6 +92,7 @@ submitButton.addEventListener("click", () => {
   const feedback = getFeedback(secretWord.toLowerCase(), userWord);
   previousGuesses.push({ word: userWord, feedback });
   displayPreviousGuesses();
+  keyboard.applyFeedback(userWord, feedback);
 
   possibleWords = filterWords(possibleWords, userWord, feedback);
   updatefixedWordsLarge(possibleWords);
