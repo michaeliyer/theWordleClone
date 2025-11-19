@@ -3,22 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WordleCloneSmall</title>
+    <title>WordleCloneCombined</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Geologica:wght@100..900&family=Protest+Riot&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Diplomata&family=Galindo&family=Grand+Hotel&display=swap"
       rel="stylesheet"
     />
-    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Patua+One&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style4.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="linkLay">
       <a href="index.html" class="linky1">Wanna Go Big? Click Here!</a>
+      <a href="index2.html" class="linky2">Wanna Go Small? Click Here!</a>
       <a href="index3.html" class="linky3">Wanna Get Real? Click Here!</a>
-      <a href="index4.html" class="linky3">Wanna Get Combined? Click Here!</a>
     </div>
+    <h1>Wordle Clone Combined!</h1>
     <button id="new-word">Generate New Word</button>
-
-    <h1>Wordle Clone Small</h1>
 
     <label for="word-dropdown">Choose a starting word:</label>
     <select id="word-dropdown">
@@ -30,7 +35,7 @@
         type="text"
         id="guess"
         maxlength="5"
-        placeholder="Type a 5-letter word"
+        placeholder="Enter a 5-letter word"
       />
       <button id="submit">Check</button>
     </div>
@@ -41,12 +46,17 @@
     <div id="keyboard"></div>
 
     <div id="success-message" class="success-message hidden">
-      <p>You solved the puzzle in <span id="tries-count">0</span> tries! Play again?</p>
+      <p>
+        You solved the puzzle in <span id="tries-count">0</span> tries! Play
+        again?
+      </p>
     </div>
 
-    <h2 id="possible-words-header" class="toggleable-header">Possible Words (<span id="word-count">0</span>)</h2>
+    <h2 id="possible-words-header" class="toggleable-header">
+      Possible Words (<span id="word-count">0</span>)
+    </h2>
     <ul id="filtered-words" class="hidden-words"></ul>
 
-    <script type="module" src="script2.js"></script>
+    <script type="module" src="script4.js"></script>
   </body>
 </html>

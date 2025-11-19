@@ -22,6 +22,7 @@
     <div class="linkLay">
       <a href="index2.html" class="linky2">Wanna Go Small? Click Here!</a>
       <a href="index3.html" class="linky3">Wanna Get Real? Click Here!</a>
+      <a href="index4.html" class="linky4">Wanna Get Combined? Click Here!</a>
     </div>
     <h1>Wordle Clone Big Boy!</h1>
     <button id="new-word">Generate New Word</button>
@@ -46,8 +47,17 @@
 
     <div id="keyboard"></div>
 
-    <h2>Possible Words (<span id="word-count">0</span>)</h2>
-    <ul id="filtered-words"></ul>
+    <div id="success-message" class="success-message hidden">
+      <p>
+        You solved the puzzle in <span id="tries-count">0</span> tries! Play
+        again?
+      </p>
+    </div>
+
+    <h2 id="possible-words-header" class="toggleable-header">
+      Possible Words (<span id="word-count">0</span>)
+    </h2>
+    <ul id="filtered-words" class="hidden-words"></ul>
 
     <script type="module" src="script.js"></script>
   </body>

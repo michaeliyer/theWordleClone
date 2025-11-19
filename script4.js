@@ -1,7 +1,10 @@
 // Import wordList and convert all words to lowercase for consistency
-import { dailyWordsSmall } from "./theWholeEnchilada.js";
+import { combinedWords } from "./theCombinedEnchilada.js";
 import { initKeyboard } from "./zoosKeys.js";
-const lowerCaseWordList = dailyWordsSmall.map((word) => word.toLowerCase());
+
+let lowerCaseCombinedWords = combinedWords.map((word) =>
+  word.toLowerCase()
+);
 
 const inputField = document.getElementById("guess");
 const submitButton = document.getElementById("submit");
@@ -12,17 +15,16 @@ const wordDropdown = document.getElementById("word-dropdown");
 const newWordButton = document.getElementById("new-word");
 const keyboard = initKeyboard("keyboard");
 
-let possibleWords = [...lowerCaseWordList];
+let possibleWords = [...lowerCaseCombinedWords];
 let previousGuesses = [];
 let secretWord = "";
 
 function resetGame() {
-  possibleWords = [...lowerCaseWordList];
+  possibleWords = [...lowerCaseCombinedWords];
   previousGuesses = [];
   previousGuessesContainer.innerHTML = "";
   filteredWordsContainer.innerHTML = "";
-  filteredWordsContainer.style.display = "none";
-  wordCount.textContent = 0;
+  wordCount.textContent = possibleWords.length;
   inputField.value = "";
   if (wordDropdown) {
     wordDropdown.value = "";
@@ -33,7 +35,9 @@ function resetGame() {
 
 function generateNewSecretWord() {
   secretWord =
-    lowerCaseWordList[Math.floor(Math.random() * lowerCaseWordList.length)];
+    lowerCaseCombinedWords[
+      Math.floor(Math.random() * lowerCaseCombinedWords.length)
+    ];
   resetGame();
 }
 
@@ -50,7 +54,7 @@ function populateDropdown() {
     console.error("Dropdown not found in the DOM!");
     return;
   }
-  lowerCaseWordList.forEach((word) => {
+  lowerCaseCombinedWords.forEach((word) => {
     let option = document.createElement("option");
     option.value = word;
     option.textContent = word;
@@ -67,8 +71,6 @@ wordDropdown.addEventListener("change", () => {
 submitButton.addEventListener("click", () => {
   let userWord = inputField.value.toLowerCase();
 
-
-
   // **************************************************
   // if (userWord.length !== 5 || !possibleWords.includes(userWord)) {
   //   alert("Please enter a valid 5-letter word!");
@@ -80,7 +82,6 @@ submitButton.addEventListener("click", () => {
     return;
   }
   // **************************************************
-
   const feedback = getFeedback(secretWord.toLowerCase(), userWord);
   previousGuesses.push({ word: userWord, feedback });
   displayPreviousGuesses();
@@ -120,8 +121,8 @@ function getFeedback(secret, guess) {
   return feedback;
 }
 // THE FILTER STUFF
-function filterWords(dailyWordsSmall, guess, feedback) {
-  return dailyWordsSmall.filter((word) => {
+function filterWords(combinedWords, guess, feedback) {
+  return combinedWords.filter((word) => {
     let wordArr = word.split("");
     let guessArr = guess.split("");
 
@@ -208,7 +209,6 @@ function formatFeedback(word, feedback) {
 }
 
 function updateWordList(words) {
-  filteredWordsContainer.style.display = "block";
   wordCount.textContent = words.length;
 
   // Display words in a paragraph, comma-separated
@@ -264,3 +264,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+

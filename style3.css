@@ -23,6 +23,11 @@ body {
     color: rgb(195, 89, 231);
 }
 
+.linky4 {
+    text-decoration: none;
+    color: rgb(230, 13, 20);
+}
+
 .linky1:hover {
     text-decoration: underline;
     color: rgb(107, 237, 178);
@@ -32,6 +37,12 @@ body {
 .linky2:hover {
     text-decoration: underline;
     color: rgb(107, 237, 178);
+    font-family: "UnifrakturCook", serif;
+}
+
+.linky4:hover {
+    text-decoration: underline;
+    color: rgb(81, 162, 244);
     font-family: "UnifrakturCook", serif;
 }
 
@@ -102,6 +113,20 @@ button {
  #filtered-words {
     color: #d4f68e;
     font-family: "Viaoda Libre", serif;
+}
+
+.hidden-words {
+    display: none;
+}
+
+.toggleable-header {
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.toggleable-header:hover {
+    opacity: 0.8;
 } 
 
 
@@ -249,4 +274,54 @@ button {
     border-color: #9ea3c7;
 }
 
+.success-message {
+    margin: 20px auto;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #6aaa64 0%, #4a8a54 100%);
+    border: 3px solid #62f0ae;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(98, 240, 174, 0.4);
+    max-width: 400px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: successPulse 0.5s ease-in-out;
+}
+
+.success-message:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(98, 240, 174, 0.6);
+}
+
+.success-message.hidden {
+    display: none;
+}
+
+.success-message p {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: "Viaoda Libre", serif;
+}
+
+.success-message #tries-count {
+    color: #ffff00;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+@keyframes successPulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 

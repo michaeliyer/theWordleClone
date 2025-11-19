@@ -31,6 +31,7 @@ function resetGame() {
     wordDropdown.value = "";
   }
   keyboard.reset();
+  hideSuccessMessage();
 }
 
 function generateNewSecretWord() {
@@ -68,7 +69,6 @@ wordDropdown.addEventListener("change", () => {
 submitButton.addEventListener("click", () => {
   let userWord = inputField.value.toLowerCase();
 
-
   // **************************************************
   // if (userWord.length !== 5 || !possibleWords.includes(userWord)) {
   //   alert("Please enter a valid 5-letter word!");
@@ -88,6 +88,11 @@ submitButton.addEventListener("click", () => {
 
   possibleWords = filterWords(possibleWords, userWord, feedback);
   updateWordList(possibleWords);
+
+  // Check for win condition (all green)
+  if (feedback.every((color) => color === "green")) {
+    showSuccessMessage();
+  }
 });
 
 function getFeedback(secret, guess) {
@@ -262,3 +267,39 @@ function displayFeedback(word, feedback) {
     feedbackContainer.appendChild(span);
   });
 }
+
+function showSuccessMessage() {
+  const successMessage = document.getElementById("success-message");
+  const triesCount = document.getElementById("tries-count");
+  if (successMessage && triesCount) {
+    triesCount.textContent = previousGuesses.length;
+    successMessage.classList.remove("hidden");
+  }
+}
+
+function hideSuccessMessage() {
+  const successMessage = document.getElementById("success-message");
+  if (successMessage) {
+    successMessage.classList.add("hidden");
+  }
+}
+
+// Handle success message click to generate new word (after DOM is ready)
+document.addEventListener("DOMContentLoaded", () => {
+  const successMessage = document.getElementById("success-message");
+  if (successMessage) {
+    successMessage.addEventListener("click", () => {
+      generateNewSecretWord();
+      hideSuccessMessage();
+    });
+  }
+
+  // Handle possible words header toggle
+  const possibleWordsHeader = document.getElementById("possible-words-header");
+  const filteredWords = document.getElementById("filtered-words");
+  if (possibleWordsHeader && filteredWords) {
+    possibleWordsHeader.addEventListener("click", () => {
+      filteredWords.classList.toggle("hidden-words");
+    });
+  }
+});
