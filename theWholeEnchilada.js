@@ -1,3 +1,4 @@
+
 export const fixedWordsLarge = [
     'QQQQQ', 'ZZZZZ', 'JJJJJ', 'QQZZJ', 'KKKJJ', 'JQQZZ', 'JZZQQ', 'QQJZZ', 'ZZJQQ', 'QQJZX',   
     'AAHED', 'AALII', 'AARGH', 'AARTI', 'ABACA', 'ABACI', 'ABACK', 'ABACS', 'ABAFT', 'ABAKA',
@@ -1320,7 +1321,7 @@ export const dailyWordsSmall = [
     'ACING', 'ADDED', 'ADDER', 'ADDLE', 'ADIOS', 'ADOBO',
     'ADORN', 'AEGIS', 'AERIE', 'AFIRE', 'AFORE', 'AFOOT', 'AFOUL', 'AGAVE', 'AGAZE', 'AGISM', 
     'AGITA', 'AGONE', 'AGORA', 'AIDER', 'ALACK', 'ALAMO', 'ALGAE', 'ALGAL',
-    'ALIBI', 'ALIGN', 'ALLAY', 'ALLEY', 'ALLOT', 'ALLOY', 'ALOHA', 'AMAZE', 'AMEND',
+    'ALIBI', 'ALIGN', 'ALLAY', 'ALLEY', 'ALLOY', 'ALOHA', 'AMAZE', 'AMEND',
     'AMITY', 'AMPLY', 'ANIME', 'ANKLE',
     'ANNUL', 'ANTSY', 'APING', 'APNEA', 'ARENA', 'ARMOR', 'AROSE', 'ARRAY', 
     'ARSON', 'ASTIR', 'ATTIC', 'AUGUR', 'AUNTY', 'AVIAN', 
@@ -1421,7 +1422,7 @@ export const dailyWordsSmall = [
     'SMOTE', 'SNEER', 'SNIFF', 'SNIPE', 'SNORE', 'SNOWY', 'SNUCK', 'SNUFF',
     'SOAPY', 'SOBER', 'SONAR', 'SOOTH', 'SOOTY', 'SORRY', 'SPANK', 
     'SPAWN', 'SPERM', 'SPIED', 'SPIKY', 'SPILT', 
-    'SPINY', 'SPOOK', 
+    'SPOOK', 
     'SPREE', 'SPUNK', 'SPURN', 'SQUIB', 'STALK',
     'STANK', 'STAVE', 'STEAK', 'STEAL', 
     'STEER', 'STOKE', 'STOOP', 
@@ -1475,7 +1476,7 @@ export const dailyWordsLarge = [
     'ALECK', 'ALECS', 'ALEFS', 'ALEPH', 'ALEWS', 'ALEYE', 'ALFAS', 'ALGAE', 'ALGAL', 'ALGAS',
     'ALGID', 'ALGIN', 'ALGOL', 'ALIAS', 'ALIBI', 'ALIFS', 'ALIGN', 'ALINE',
     'ALIST', 'ALIYA', 'ALKIE', 'ALKOS', 'ALKYD', 'ALKYL', 'ALLEE', 'ALLEY', 'ALLIS',
-    'ALLOD', 'ALLOT', 'ALLOY', 'ALLYL', 'ALMAH', 'ALMAS', 'ALMEH', 'ALMES', 'ALMUD',
+    'ALLOD', 'ALLOY', 'ALLYL', 'ALMAH', 'ALMAS', 'ALMEH', 'ALMES', 'ALMUD',
     'ALMUG', 'ALODS', 'ALOED', 'ALOES', 'ALOHA', 'ALOIN', 'ALONE', 'ALOOS',
     'ALOSE', 'ALTHO', 'ALTOS', 'ALULA', 'ALUMS', 'ALURE',
     'ALVAR', 'ALWAY', 'AMAHS', 'AMAIN', 'AMATE', 'AMAUT', 'AMAZE', 'AMBAN',
@@ -2505,7 +2506,7 @@ export const dailyWordsLarge = [
     'SPEKS', 'SPELD', 'SPELK', 'SPEOS', 'SPERM', 'SPETS',
     'SPEUG', 'SPEWS', 'SPEWY', 'SPIAL', 'SPICA', 'SPICK', 'SPIDE', 'SPIED',
     'SPIER', 'SPIES', 'SPIFF', 'SPIFS', 'SPIKY', 'SPILE', 
-    'SPIMS', 'SPINA', 'SPINK', 'SPINS', 'SPINY', 'SPIRT', 'SPIRY', 
+    'SPIMS', 'SPINA', 'SPINK', 'SPINS', 'SPIRT', 'SPIRY', 
     'SPITS', 'SPITZ', 'SPIVS', 'SPLAY', 'SPLIT', 'SPLOG', 'SPODE', 'SPODS',
     'SPOOK', 'SPOOM', 'SPOOR', 'SPOOT', 'SPORK',
     'SPOSH', 'SPOTS', 'SPRAD', 'SPRAG', 'SPRAT', 'SPRED', 'SPREE',
@@ -12719,6 +12720,16 @@ export const wordleWords = [
         myScore: 3,
         wordNumber: 1686,
       }, 
+      { word: "ALLOT",
+        gameDate: "1/31/26",
+        myScore: 2,
+        wordNumber: 1687,
+      }, 
+      { word: "SPINY",
+        gameDate: "2/1/26",
+        myScore: 4,
+        wordNumber: 1688,
+      }, 
 
     
   ];
@@ -12736,7 +12747,7 @@ console.log("Push, Stash, and Pop. What the Chryste!")
 console.log("August 4, 2025, Jackwagon. Dickerson. Eff On Off Guyo.")
 console.log("August 7, 2025, CORAL hits! Now what? Scion? Rinse? Caste? But CORAL HITS!")
 console.log("August 9, 2025, Mom: Hello" )
-console.log("January 30, 2026: Trump sux dykk000000000! JUMBO")
+console.log("Feb 1, 2026: Trump sux dykk000000000! SPINY")
 
 
 console.log(wordleWords)
