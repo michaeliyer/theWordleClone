@@ -1,5 +1,5 @@
 // Import wordList and convert all words to lowercase for consistency
-import { combinedWords } from "./theCombinedEnchilada.js";
+import { combinedWords } from "./theWholeEnchilada.js";
 import { initKeyboard } from "./zoosKeys.js";
 
 let lowerCaseCombinedWords = combinedWords.map((word) =>
