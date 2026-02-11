@@ -31,6 +31,12 @@ body {
   font-family: "Galindo", serif;
 }
 
+.linky5 {
+  text-decoration: none;
+  color: rgb(60, 10, 167);
+  font-family: "Galindo", serif;
+}
+
 .linky2:hover {
   text-decoration: underline;
   color: rgb(182, 210, 20);
@@ -48,6 +54,13 @@ body {
 .linky4:hover {
   text-decoration: underline;
   color: rgb(232, 40, 10);
+  font-family: "Diplomata", serif;
+  font-size: 1.5rem;
+}
+
+.linky5:hover {
+  text-decoration: underline;
+  color: rgb(10, 232, 80);
   font-family: "Diplomata", serif;
   font-size: 1.5rem;
 }

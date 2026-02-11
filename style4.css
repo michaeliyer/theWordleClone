@@ -31,6 +31,12 @@ body {
   font-family: "Galindo", serif;
 }
 
+.linky4 {
+  text-decoration: none;
+  color: rgb(204, 83, 241);
+  font-family: "Galindo", serif;
+}
+
 .linky1:hover {
   text-decoration: underline;
   color: rgb(182, 210, 20);
@@ -48,6 +54,13 @@ body {
 .linky3:hover {
   text-decoration: underline;
   color: rgb(244, 141, 125);
+  font-family: "Grand Hotel", serif;
+  font-size: 1.5rem;
+}
+
+.linky4:hover {
+  text-decoration: underline;
+  color: rgb(125, 244, 149);
   font-family: "Grand Hotel", serif;
   font-size: 1.5rem;
 }
