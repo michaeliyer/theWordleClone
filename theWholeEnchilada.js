@@ -1584,6 +1584,7 @@ export const combinedWords = [
     'ZESTY', 'ZONAL'
 ];
 
+
 export const dailyWordsSmall = [
 'ABACK', 'ABASE', 'ABATE', 'ABBEY', 'ABBOT', 'ABHOR', 'ABIDE', 'ABLED', 'ABODE', 'ABORT',
 'ABOUT', 'ABOVE', 'ABUSE', 'ABYSS', 'ACORN', 'ACRID', 'ACTOR', 'ADAGE', 'ADAPT',
@@ -1679,7 +1680,7 @@ export const dailyWordsSmall = [
 'GONER', 'GOODY', 'GOOEY', 'GOOFY', 'GOOSE', 'GORGE', 'GOUGE', 'GOURD', 'GRACE', 
 'GRAFT', 'GRAIL', 'GRAIN', 'GRAND', 'GRANT', 'GRAPH', 'GRASP', 'GRASS', 'GRATE',
 'GRAVE', 'GRAVY', 'GRAZE', 'GREAT', 'GREED', 'GREEN', 'GREET', 'GRIEF', 'GRIFT', 'GRILL',
-'GRIME', 'GRIMY', 'GRIND', 'GRIPE', 'GROAN', 'GROIN', 'GROOM', 'GROPE', 'GROSS', 'GROUP',
+'GRIME', 'GRIMY', 'GRIND', 'GROAN', 'GROIN', 'GROOM', 'GROPE', 'GROSS', 'GROUP',
 'GROUT', 'GROVE', 'GROWL', 'GROWN', 'GRUEL', 'GRUFF', 'GRUNT', 'GUANO', 'GUARD', 
 'GUESS', 'GUEST', 'GUIDE', 'GUILD', 'GUILE', 'GUILT', 'GUISE', 'GULCH', 'GULLY', 'GUMBO',
 'GUMMY', 'GUPPY', 'GUSTO', 'GUSTY', 'GUTSY', 'GYPSY', 'HABIT', 'HAIRY', 'HALVE', 'HANDY',
@@ -1715,7 +1716,7 @@ export const dailyWordsSmall = [
 'METAL', 'METER', 'METRO', 'MICRO', 'MIDGE', 'MIDST', 'MIGHT', 'MILKY', 'MIMIC', 'MINCE',
 'MINER', 'MINIM', 'MINOR', 'MINTY', 'MINUS', 'MIRTH', 'MISER', 'MISSY', 'MOCHA', 'MODAL',
 'MODEL', 'MODEM', 'MOIST', 'MOLAR', 'MOLDY', 'MOMMY', 'MONEY', 'MONTH', 'MOODY',
-'MOOSE', 'MORAL', 'MORON', 'MOSSY', 'MOTEL', 'MOTIF', 'MOTOR', 'MOTTO', 'MOULT',
+'MOOSE', 'MORAL', 'MORON', 'MOSSY', 'MOTEL', 'MOTOR', 'MOTTO', 'MOULT',
 'MOUND', 'MOUNT', 'MOURN', 'MOUSE', 'MOUTH', 'MOVIE', 'MOWER', 'MUCKY', 'MUCUS',
 'MUDDY', 'MULCH', 'MUMMY', 'MUNCH', 'MURAL', 'MURKY', 'MUSHY', 'MUSIC', 'MUSKY', 'MUSTY',
 'MYRRH', 'NACHO', 'NADIR', 'NAIVE', 'NANNY', 'NASAL', 'NASTY', 'NATAL', 'NAVAL', 'NAVEL', 
@@ -1737,7 +1738,7 @@ export const dailyWordsSmall = [
 'PITHY', 'PIVOT', 'PIXEL', 'PIXIE', 'PLACE', 'PLAID', 'PLAIN', 'PLAIT', 'PLANE',
 'PLANK', 'PLANT', 'PLATE', 'PLAZA', 'PLEAD', 'PLEAT', 'PLIED', 'PLIER', 'PLUCK', 'PLUMB',
 'PLUMP', 'PLUNK', 'PLUSH', 'POESY', 'POINT', 'POISE', 'POKER', 'POLAR', 'POLKA',
-'POLYP', 'POOCH', 'POPPY', 'PORCH', 'POSIT', 'POSSE', 'POUCH', 'POUND', 'POUTY',
+'POLYP', 'POOCH', 'POPPY', 'PORCH', 'POSSE', 'POUCH', 'POUND', 'POUTY',
 'POWER', 'PRANK', 'PRAWN', 'PREEN', 'PRESS', 'PRICE', 'PRICK', 'PRIDE', 'PRIED', 'PRIME',
 'PRIMO', 'PRIMP', 'PRINT', 'PRIOR', 'PRISM', 'PRIVY', 'PRIZE', 'PROBE', 'PRONE', 'PRONG',
 'PROOF', 'PROSE', 'PROUD', 'PROVE', 'PROWL', 'PROXY', 'PRUNE', 'PSALM', 'PUBIC',
@@ -1820,8 +1821,7 @@ export const dailyWordsSmall = [
 'VALID', 'VALOR', 'VALUE', 'VAPID', 'VAPOR', 'VAULT', 'VAUNT', 'VENAL', 'VENOM',
 'VENUE', 'VERGE', 'VERSE', 'VERSO', 'VERVE', 'VICAR', 'VIDEO', 'VIGIL', 'VIGOR', 'VILLA',
 'VINYL', 'VIOLA', 'VIPER', 'VIRAL', 'VIRUS', 'VISOR', 'VISTA', 'VITAL', 'VITRO', 
-'VIVID',
-'VIXEN', 'VODKA', 'VOICE', 'VOILA', 'VOMIT', 'VOTER', 'VOUCH', 'VOWEL',
+'VIVID', 'VIXEN', 'VODKA', 'VOICE', 'VOILA', 'VOMIT', 'VOTER', 'VOUCH', 'VOWEL',
 'VYING', 'WACKY', 'WAFER', 'WAGER', 'WAGON', 'WAIST', 'WAIVE', 'WALTZ', 'WARTY', 'WASTE',
 'WATCH', 'WATER', 'WAXEN', 'WEARY', 'WEDGE', 'WEEDY', 'WEIRD',
 'WELCH', 'WELSH', 'WHACK', 'WHALE', 'WHEAT', 'WHEEL', 'WHELP', 'WHERE', 'WHICH',
@@ -2306,7 +2306,7 @@ export const dailyWordsLarge = [
     'GREAT', 'GREBE', 'GREBO', 'GRECE', 'GREED', 'GREEK', 'GREEN', 'GREES', 'GREET', 'GREGE',
     'GREGO', 'GREIN', 'GRENS', 'GRESE', 'GREVE', 'GREWS', 'GREYS', 'GRICE', 'GRIDE', 'GRIDS',
     'GRIEF', 'GRIFF', 'GRIFT', 'GRIGS', 'GRIKE', 'GRILL', 'GRIME', 'GRIMY', 'GRIND', 'GRINS',
-    'GRIOT', 'GRIPE', 'GRIPS', 'GRIPT', 'GRIPY', 'GRISE', 'GRIST', 'GRISY', 'GRITH', 'GRITS',
+    'GRIOT', 'GRIPS', 'GRIPT', 'GRIPY', 'GRISE', 'GRIST', 'GRISY', 'GRITH', 'GRITS',
     'GRIZE', 'GROAN', 'GROAT', 'GRODY', 'GROGS', 'GROIN', 'GROKS', 'GROMA', 'GRONE', 'GROOF',
     'GROOM', 'GROPE', 'GROSS', 'GROSZ', 'GROTS', 'GROUF', 'GROUP', 'GROUT', 'GROVE', 'GROVY',
     'GROWL', 'GROWN', 'GROWS', 'GRRLS', 'GRRRL', 'GRUBS', 'GRUED', 'GRUEL', 'GRUES', 'GRUFE',
@@ -2557,7 +2557,7 @@ export const dailyWordsLarge = [
     'MOPES', 'MOPEY', 'MOPPY', 'MOPSY', 'MOPUS', 'MORAE', 'MORAL', 'MORAS', 'MORAT', 'MORAY',
     'MOREL', 'MORES', 'MORIA', 'MORNE', 'MORNS', 'MORON', 'MORRA', 'MORRO', 'MORSE',
     'MORTS', 'MOSED', 'MOSES', 'MOSEY', 'MOSKS', 'MOSSO', 'MOSSY', 'MOSTE', 'MOSTS', 'MOTED',
-    'MOTEL', 'MOTEN', 'MOTES', 'MOTET', 'MOTEY', 'MOTHS', 'MOTHY', 'MOTIF', 'MOTIS', 'MOTOR',
+    'MOTEL', 'MOTEN', 'MOTES', 'MOTET', 'MOTEY', 'MOTHS', 'MOTHY', 'MOTIS', 'MOTOR',
     'MOTTE', 'MOTTO', 'MOTTS', 'MOTTY', 'MOTUS', 'MOTZA', 'MOUCH', 'MOUES', 'MOULD', 'MOULS',
     'MOULT', 'MOUND', 'MOUNT', 'MOUPS', 'MOURN', 'MOUSE', 'MOUST', 'MOUSY', 'MOUTH', 'MOVED',
     'MOVES', 'MOVIE', 'MOWAS', 'MOWED', 'MOWER', 'MOWRA', 'MOXAS', 'MOXIE', 'MOYAS',
@@ -2692,7 +2692,7 @@ export const dailyWordsLarge = [
     'POOJA', 'POOKA', 'POOKS', 'POOLS', 'POONS', 'POOPS', 'POOPY', 'POORI', 'POORT', 'POOTS',
     'POPES', 'POPPA', 'POPPY', 'POPSY', 'PORAE', 'PORAL', 'PORCH', 'PORED', 'PORER', 'PORES',
     'PORGE', 'PORGY', 'PORIN', 'PORKS', 'PORKY', 'PORNO', 'PORNS', 'PORNY', 'PORTA', 'PORTS',
-    'PORTY', 'POSED', 'POSES', 'POSEY', 'POSHO', 'POSIT', 'POSSE', 'POSTS', 'POTAE',
+    'PORTY', 'POSED', 'POSES', 'POSEY', 'POSHO', 'POSSE', 'POSTS', 'POTAE',
     'POTCH', 'POTED', 'POTES', 'POTIN', 'POTOO', 'POTSY', 'POTTO', 'POTTS', 'POTTY', 'POUCH',
     'POUFF', 'POUFS', 'POUKE', 'POUKS', 'POULE', 'POULP', 'POULT', 'POUND', 'POUPE', 'POUPT',
     'POURS', 'POUTS', 'POUTY', 'POWAN', 'POWER', 'POWIN', 'POWND', 'POWNS', 'POWNY', 'POWRE',
@@ -25297,6 +25297,17 @@ export const wordleWords = [
         guess_5: null,
         guess_6: null,
       }, 
+      { word: "GRIPE", 
+        gameDate: "8/6/26",
+        myScore: 4,
+        wordNumber: 1874,
+        guess_1: "LEANT",
+        guess_2: "COPSE",
+        guess_3: "PUREE",
+        guess_4: "GRIPE",
+        guess_5: null,
+        guess_6: null,
+      }, 
       
 
  
@@ -25315,7 +25326,7 @@ console.log("Push, Stash, and Pop. What the Chryste!")
 console.log("August 4, 2025, Jackwagon. Dickerson. Eff On Off Guyo.")
 console.log("August 7, 2025, CORAL hits! Now what? Scion? Rinse? Caste? But CORAL HITS!")
 console.log("August 9, 2025, Mom: Hello" )
-console.log("August 5, 2026: Trump sux dykk000000000! POSIT")
+console.log("August 6, 2026: Trump sux dykk000000000! GRIPE")
 
 console.log(wordleWords)
 
