@@ -1333,8 +1333,8 @@ export const combinedWords = [
     'ANVIL', 'AORTA', 'APART', 'APIAN', 'APHID', 'APING', 'APNEA', 'APPLE', 'APPLY', 'APRON', 
     'APTLY',
     'ARBOR', 'ARDOR', 'ARENA', 'ARGUE', 'ARISE', 'ARMOR', 'AROMA', 'AROSE', 'ARRAY', 'ARROW',
-    'ARSON', 'ARTSY', 'ASCOT', 'ASHEN', 'ASIDE', 'ASKEW', 'ASPIC', 'ASSAY', 'ASSET', 'ATLAS', 
-    'ATOLL',
+    'ARSON', 'ARTSY', 'ASCOT', 'ASHEN', 'ASIDE', 'ASKEW', 'ASPIC', 'ASSAY', 'ASSET', 'ASTER', 
+    'ATLAS', 'ATOLL',
     'ATONE', 'ATRIA', 'ATTIC', 'AUDIO', 'AUDIT', 'AUGUR', 'AUNTY', 'AVAIL', 'AVERT', 
     'AVOID', 'AWAIT', 'AWAKE', 'AWARD', 'AWARE', 'AWASH', 'AWFUL', 'AWOKE', 'AXIAL', 'AXIOM',
     'AXION', 'AZURE', 'BACON', 'BADGE', 'BADLY', 'BAGEL', 'BAGGY', 'BAKER', 'BALER', 'BALMY',
@@ -1476,7 +1476,8 @@ export const combinedWords = [
     'MYRRH', 'NACHO', 'NADIR', 'NAIVE', 'NANNY', 'NASAL', 'NASTY', 'NATAL', 'NAVAL', 'NAVEL', 
     'NEEDY',
     'NEIGH', 'NERDY', 'NERVE', 'NERVY', 'NEVER', 'NEWER', 'NEWLY', 'NICER', 'NICHE', 'NIECE',
-    'NIGHT', 'NINJA', 'NINNY', 'NINTH', 'NOBLE', 'NOBLY', 'NOISE', 'NOISY', 'NOMAD', 'NOOSE',
+    'NIFTY', 'NIGHT', 'NINJA', 'NINNY', 'NINTH', 'NOBLE', 'NOBLY', 'NOISE', 'NOISY', 'NOMAD', 
+    'NOOSE',
     'NORTH', 'NOSEY', 'NOTCH', 'NOVEL', 'NUDGE', 'NURSE', 'NUTTY', 'NYLON', 'NYMPH', 'OAKEN',
     'OASES', 'OASIS', 'OBESE', 'OCCUR', 'OCEAN', 'OCTAL', 'OCTET', 'ODDER', 'ODDLY', 'OFFAL', 
     'OFFER', 'OFTEN',
@@ -1913,7 +1914,7 @@ export const dailyWordsLarge = [
     'ARTEL', 'ARTIC', 'ARTIS', 'ARTSY', 'ARUHE', 'ARUMS', 'ARVAL', 'ARVEE', 'ARVOS', 'ARYLS',
     'ASANA', 'ASCON', 'ASCOT', 'ASCUS', 'ASDIC', 'ASHED', 'ASHEN', 'ASHES', 'ASHET', 'ASIDE',
     'ASKED', 'ASKER', 'ASKEW', 'ASKOI', 'ASKOS', 'ASPEN', 'ASPER', 'ASPIS', 'ASPRO',
-    'ASSAI', 'ASSAM', 'ASSAY', 'ASSES', 'ASSET', 'ASSEZ', 'ASSOT', 'ASTER', 'ASTIR', 'ASTUN',
+    'ASSAI', 'ASSAM', 'ASSAY', 'ASSES', 'ASSET', 'ASSEZ', 'ASSOT', 'ASTIR', 'ASTUN',
     'ASURA', 'ASWAY', 'ASWIM', 'ASYLA', 'ATAPS', 'ATAXY', 'ATIGI', 'ATILT', 'ATIMY', 'ATLAS',
     'ATMAN', 'ATMAS', 'ATMOS', 'ATOCS', 'ATOKE', 'ATOKS', 'ATOLL', 'ATOMS', 'ATOMY', 'ATONE',
     'ATONY', 'ATOPY', 'ATRIA', 'ATRIP', 'ATTAP', 'ATTAR', 'ATUAS', 'AUDAD', 'AUDIO',
@@ -2607,7 +2608,7 @@ export const dailyWordsLarge = [
     'NEWTS', 'NEXTS', 'NEXUS',
     'NGAIO', 'NGANA', 'NGATI', 'NGOMA', 'NGWEE', 'NICAD', 'NICER', 'NICHE', 'NICHT', 'NICKS',
     'NICOL', 'NIDAL', 'NIDED', 'NIDES', 'NIDOR', 'NIDUS', 'NIEFS', 'NIEVE', 'NIFES',
-    'NIFFS', 'NIFFY', 'NIFTY', 'NIGHS', 'NIGHT', 'NIHIL', 'NIKAB', 'NIKAH', 'NIKAU', 'NILLS',
+    'NIFFS', 'NIFFY', 'NIGHS', 'NIGHT', 'NIHIL', 'NIKAB', 'NIKAH', 'NIKAU', 'NILLS',
     'NIMBI', 'NIMBS', 'NIMPS', 'NINER', 'NINES', 'NINJA', 'NINNY', 'NINON', 'NINTH', 'NIPAS',
     'NIPPY', 'NIQAB', 'NIRLS', 'NIRLY', 'NISEI', 'NISSE', 'NISUS', 'NITER', 'NITES', 'NITID',
     'NITON', 'NITRE', 'NITRO', 'NITRY', 'NITTY', 'NIVAL', 'NIXED', 'NIXER', 'NIXES', 'NIXIE',
@@ -25708,6 +25709,28 @@ export const wordleWords = [
         guess_4: "DRYLY",
         guess_5: null,
         guess_6: null,
+      },
+      { word: "ASTER", 
+        gameDate: "9/11/26",
+        myScore: 4,
+        wordNumber: 1910,
+        guess_1: "RINSE",
+        guess_2: "SHREW",
+        guess_3: "LASER",
+        guess_4: "ASTER",
+        guess_5: null,
+        guess_6: null,
+      },
+      { word: "NIFTY", 
+        gameDate: "9/12/26",
+        myScore: 3,
+        wordNumber: 1911,
+        guess_1: "SCION",
+        guess_2: "MINOR",
+        guess_3: "NIFTY",
+        guess_4: null,
+        guess_5: null,
+        guess_6: null,
       }
 
 
@@ -25728,7 +25751,7 @@ console.log("August 4, 2025, Jackwagon. Dickerson. Eff On Off Guyo.")
 console.log("August 7, 2025, CORAL hits! Now what? Scion? Rinse? Caste? But CORAL HITS!")
 console.log("August 9, 2025, Mom: Hello" )
 console.log("August 9, 2025, Mom: Hello, Again!" )
-console.log("September 10, 2026: Trump sux dykk000000000! DRYLY")
+console.log("September 12, 2026: Trump sux dykk000000000! NIFTY")
 
 console.log(wordleWords)
 
